@@ -13,12 +13,10 @@
         <FileAlignment>512</FileAlignment>
         <LangVersion>7.3</LangVersion>
     </PropertyGroup>
-    <Import Project="$(MSBuildProjectDirectory)/../../../CSharp.warnings.xml" />
+    <Import Project="$(MSBuildProjectDirectory)/../../CSharp.warnings.xml" />
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-        <DebugSymbols>true</DebugSymbols>
-        <DebugType>full</DebugType>
         <Optimize>false</Optimize>
-        <OutputPath>..\..\Unity\Assets\Plugins</OutputPath>
+        <OutputPath>..\..\editor\Assets\Plugins</OutputPath>
         <DefineConstants>DEBUG;</DefineConstants>
         <ErrorReport>prompt</ErrorReport>
         <WarningLevel>4</WarningLevel>
@@ -26,40 +24,40 @@
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
         <Optimize>true</Optimize>
-        <OutputPath>..\..\Unity\Assets\Plugins</OutputPath>
+        <OutputPath>..\..\editor\Assets\Plugins</OutputPath>
         <ErrorReport>prompt</ErrorReport>
         <WarningLevel>4</WarningLevel>
         <ConsolePause>false</ConsolePause>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Nightbuild|AnyCPU' ">
-        <OutputPath>..\..\Unity\Assets\Plugins</OutputPath>
+        <OutputPath>..\..\editor\Assets\Plugins</OutputPath>
         <DefineConstants>NIGHTBUILD</DefineConstants>
         <Optimize>true</Optimize>
     </PropertyGroup>
     <ItemGroup>
         <Reference Include="System">
-            <HintPath>..\..\..\KSP-test\KSP_test_1.12.3\KSP_Data\Managed\System.dll</HintPath>
+            <HintPath>..\..\..\00. KSP DEVELOP PLUGINS\System.dll</HintPath>
             <Private>False</Private>
         </Reference>
         <Reference Include="System.Core">
-            <HintPath>..\..\..\KSP-test\KSP_test_1.12.3\KSP_Data\Managed\System.Core.dll</HintPath>
+            <HintPath>..\..\..\00. KSP DEVELOP PLUGINS\System.Core.dll</HintPath>
             <Private>False</Private>
         </Reference>
         <Reference Include="UnityEngine">
-            <HintPath>..\..\..\KSP-test\KSP_test_1.12.3\KSP_Data\Managed\UnityEngine.dll</HintPath>
+            <HintPath>..\..\..\00. KSP DEVELOP PLUGINS\UnityEngine.dll</HintPath>
             <Private>False</Private>
         </Reference>
         <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-            <HintPath>..\..\..\KSP-test\KSP_test_1.12.3\KSP_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+            <HintPath>..\..\..\00. KSP DEVELOP PLUGINS\UnityEngine.CoreModule.dll</HintPath>
             <Private>False</Private>
         </Reference>
         <Reference Include="UnityEngine.UI">
-            <HintPath>..\..\..\KSP-test\KSP_test_1.12.3\KSP_Data\Managed\UnityEngine.UI.dll</HintPath>
+            <HintPath>..\..\..\00. KSP DEVELOP PLUGINS\UnityEngine.UI.dll</HintPath>
             <Private>False</Private>
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <ProjectReference Include="..\..\Unity\AT_Utils.UI.csproj">
+        <ProjectReference Include="..\..\src\AT_Utils.UI\AT_Utils.UI.csproj">
             <Project>{0b711e55-8312-144f-53ad-eda5a8cee04a}</Project>
             <Name>AT_Utils.UI</Name>
             <Private>False</Private>
